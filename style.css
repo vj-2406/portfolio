@@ -19,3 +19,133 @@ body{
     line-height: 1.6;
     background-color: var(--white);
 }
+.navbar{
+    display:flex;
+    justify-content: space-between; 
+    align-items: centre;
+    padding: 20px 5%;
+    background-color: var(--primary);
+
+    
+}   
+.site-header{
+    position:sticky;
+    top:0;
+    z-index: 10000;
+}
+.logo{
+    font-size:large 30px;
+    font-weight:500;
+    color:var(--white);
+}
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:var(--white);
+    font-weight:500;
+}
+.nav-links a:hover{
+    color: var(--accent);
+}
+.hero-section{
+    background: linear-gradient(135deg, var(--primary), #E8A0A8);
+    color: var(--white);
+    text-align: center;
+    padding:100px 5%;
+
+}
+.hero-section h1{
+    font-size:3rem;
+    margin-bottom: 20px;
+
+}
+.about-section{
+    text-align: center;
+}
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap:20px;
+    margin-top:40px;
+
+}
+.skill-item{
+    background: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    text-align: center;
+    padding:30px 20px;
+    font-weight: bold;
+    font-size:1.1rem;
+    transition:all 0.3s ;
+
+}
+.skill-item:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.527);
+}
+.project-grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+    margin-top: 40px;
+
+}
+.project-card{
+    background-color: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+   
+}
+.project-card:hover{
+     transform: translateY(-8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.527);
+}
+.projrct-card img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+}
+.btn{
+    display: inline-block;
+    padding:12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight:600;
+    font-size: 1re;
+    border: 2px solid transparent
+
+}
+
+.btn-primary{
+    background-color: var(--Accent);
+    color: azure;
+}
+
+
+.btn-primary:hover{
+    background: transparent;
+    border-color: aquamarine;
+    color: var(--Accent);
+}
+
+.btn-secondary{
+    background: #93b7cc;
+    color: var(--white);
+
+}
+
+.btn-secondary:hover{
+    background-color: transparent;
+    border-color: cadetblue;
+    color: var(--white);
+}
